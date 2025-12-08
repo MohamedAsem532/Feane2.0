@@ -1,0 +1,287 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+:root {
+  --color-main-text: white;
+  --color-nav-bar: #ffbe33;
+  --color-nav-link-hover: #ffbe33;
+  --color-paragraph: #ececec;
+  --background-color-menu-black: #1f242d;
+  --background-color-menu-img: #f1f2f3;
+}
+
+.header {
+  background-image: url("../img/hero-bg.jpg");
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0 2rem;
+  position: relative;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  height: 90px;
+}
+.header .navbar .title {
+  font-size: 32px;
+  line-height: 48px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--color-main-text);
+  width: 25%;
+}
+
+.header .navbar .nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  justify-content: center;
+  padding: 20px;
+  gap: 40px;
+  width: 50%;
+}
+.header .navbar .nav-links .nav-link {
+  text-decoration: none;
+  color: var(--color-main-text);
+}
+.header .navbar .nav-links .nav-link:hover {
+  color: var(--color-nav-link-hover);
+  transition: 0.3s;
+}
+
+.header .navbar .icon {
+  margin-left: auto;
+  width: 10%;
+}
+.header .navbar .icon .icon-link {
+  color: var(--color-main-text);
+}
+.action_btn {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: var(--color-nav-bar);
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  width: 15%;
+}
+
+.header .navbar .burger {
+  display: none;
+  cursor: pointer;
+  font-size: 25px;
+}
+.header .header-des {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  margin: 55px auto;
+  justify-content: center;
+}
+.header .header-des h1 {
+  font-size: 52px;
+  line-height: 88px;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-main-text);
+}
+.header .header-des p {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--color-paragraph);
+  width: 50%;
+}
+.header .header-des .action_btn {
+  margin-top: 22px;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  background-color: var(--color-nav-bar);
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  width: 150px;
+}
+.offers-container {
+  margin: 60px auto;
+  max-width: 1100px;
+  width: 100%;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.offers-container .offer-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--background-color-menu-black);
+  align-items: center;
+  gap: 20px;
+  width: 100%; /* full width of container */
+  max-width: 560px; /* optional limit */
+  border-radius: 2%;
+  padding: 20px;
+}
+.offers-container .offer-card .offer-img {
+  width: 170px;
+  height: 170px;
+  border: 6px solid #ffbe33;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.offers-container .offer-card .offer-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offers-container .offer-card .offer-img img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.offers-container .offer-card .offer-text {
+  color: white;
+  font-size: 31px;
+}
+.offers-container .offer-card .offer-text h5 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.offers-container .offer-card .offer-text h6 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+.offers-container .offer-card .offer-text span {
+  font-size: 18px;
+}
+.Our-Menu {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 350px));
+  gap: 30px;
+  justify-content: center;
+  margin: 30px auto;
+}
+.menu-container .menu-card {
+  background: var(--background-color-menu-black);
+  border-radius: 15px;
+  overflow: hidden;
+}
+.menu-container .menu-card .menu-img {
+  background-color: var(--background-color-menu-img);
+  width: 100%;
+  text-align: center;
+  border-bottom-left-radius: 40px;
+}
+.menu-container .menu-card .menu-img img {
+  width: 200px;
+  height: 180px;
+  margin: 20px auto;
+}
+.menu-container .menu-card .menu-img img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+.menu-container .menu-card .menu-text {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  line-height: 1.5;
+  font-weight: 200;
+  font-style: normal;
+  color: var(--color-paragraph);
+}
+.menu-container .menu-card .menu-text h2 {
+  font-size: 20px;
+}
+.menu-container .menu-card .menu-text p {
+  width: 270px;
+  font-size: 15px;
+}
+.menu-container .menu-card .menu-footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px auto;
+  align-items: center;
+}
+.menu_btn {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  background-color: var(--color-nav-bar);
+  padding: 15px 15px;
+  text-align: center;
+  border-radius: 50px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  width: 15%;
+}
+
+/* Responsive */
+@media (max-width: 1120px) {
+  .header .navbar .nav-links,
+  .navbar .action_btn,
+  .navbar .icon {
+    display: none;
+  }
+  .header .navbar .burger {
+    display: block;
+  }
+  .offers-container,
+  .menu-container {
+    grid-template-columns: 400px 400px;
+  }
+}
+@media (max-width: 768px) {
+  /* For screens smaller than 768px */
+  .offers-container,
+  .menu-container {
+    grid-template-columns: 400px; /* Stack items in a single column */
+    justify-content: center;
+  }
+}
