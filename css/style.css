@@ -118,19 +118,18 @@
   color: var(--color-paragraph);
   width: 50%;
 }
-.header .header-des .action_btn {
+.header .header-des .btn {
   margin-top: 22px;
   text-decoration: none;
   color: white;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 500;
   background-color: var(--color-nav-bar);
   padding: 10px 20px;
   text-align: center;
   border-radius: 50px;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 500;
   width: 150px;
 }
 .offers-container {
