@@ -281,7 +281,7 @@
   /* For screens smaller than 768px */
   .offers-container,
   .menu-container {
-    grid-template-columns: 350px; /* Stack items in a single column */
+    grid-template-columns: 385px; /* Stack items in a single column */
     justify-content: center;
   }
 }
