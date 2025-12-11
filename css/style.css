@@ -98,7 +98,7 @@
 .header .header-des {
   display: flex;
   flex-direction: column;
-  max-width: 660px;
+  
   flex-wrap: wrap;
   margin: 55px auto;
   justify-content: center;
