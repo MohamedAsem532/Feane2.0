@@ -3,6 +3,11 @@
   margin: 0px;
   padding: 0px;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 :root {
   --color-main-text: white;
   --color-nav-bar: #ffbe33;
@@ -21,7 +26,9 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  padding: 0 25px;
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 100%;
   position: relative;
 }
 .header .navbar {
@@ -43,7 +50,7 @@
   font-style: normal;
   text-decoration: none;
   color: var(--color-main-text);
-  flex-grow: 1; 
+  width: 25%;
 
 }
 
@@ -57,7 +64,7 @@
   justify-content: center;
   padding: 0px;
   gap: 40px;
-  flex-grow: 1;
+  width: 50%;
 }
 .header .navbar .nav-links .nav-link {
   text-decoration: none;
@@ -70,7 +77,7 @@
 
 .header .navbar .icon {
   margin-left: auto;
-  width: 120px;
+  width: 10%;
 }
 .header .navbar .icon .icon-link {
   color: var(--color-main-text);
@@ -87,7 +94,7 @@
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  width: 150px;
+  width: 15%;
 }
 
 .header .navbar .burger {
