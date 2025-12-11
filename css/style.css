@@ -43,7 +43,8 @@
   font-style: normal;
   text-decoration: none;
   color: var(--color-main-text);
-  width: 25%;
+  flex-grow: 1; 
+
 }
 
 .header .navbar .nav-links {
@@ -54,9 +55,9 @@
   font-optical-sizing: auto;
   font-weight: 500;
   justify-content: center;
-  padding: 20px;
+  padding: 0px;
   gap: 40px;
-  width: 50%;
+  flex-grow: 1;
 }
 .header .navbar .nav-links .nav-link {
   text-decoration: none;
@@ -69,7 +70,7 @@
 
 .header .navbar .icon {
   margin-left: auto;
-  width: 10%;
+  width: 120px;
 }
 .header .navbar .icon .icon-link {
   color: var(--color-main-text);
@@ -86,7 +87,7 @@
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  width: 15%;
+  width: 150px;
 }
 
 .header .navbar .burger {
