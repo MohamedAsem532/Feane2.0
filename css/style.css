@@ -3,11 +3,7 @@
   margin: 0px;
   padding: 0px;
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+
 :root {
   --color-main-text: white;
   --color-nav-bar: #ffbe33;
