@@ -341,11 +341,7 @@
   font-style: normal;
   color: var(--color-paragraph);
 }
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
+
 /* Responsive */
 @media (max-width: 1120px) {
   .header .navbar .nav-links,
