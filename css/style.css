@@ -309,6 +309,9 @@
   background-color: var(--background-color-menu-black);
   padding: 50px;
   margin-top: 40px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 .about .about-img {
   max-width: 500px;
