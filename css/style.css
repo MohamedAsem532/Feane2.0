@@ -11,8 +11,9 @@
   --color-paragraph: #ececec;
   --background-color-menu-black: #1f242d;
   --background-color-menu-img: #f1f2f3;
+  --color-button-text:#ececec;
   --color-button:#ffbe33;
-  --color-button-hover:#72520d;
+  --color-button-hover:#e69c00;
 }
 
 .header {
@@ -80,7 +81,8 @@
 }
 .action_btn {
   text-decoration: none;
-  color: white;
+  border: none;
+  color: var(--color-button-text);
   font-size: 17px;
   font-weight: 400;
   background-color: var(--color-nav-bar);
@@ -92,7 +94,10 @@
   font-weight: 500;
   width: 15%;
 }
-
+.action_btn:hover{
+  background-color: var(--color-button-hover);
+  transition: 0.5s ease;
+}
 .header .navbar .burger {
   display: none;
   cursor: pointer;
@@ -127,16 +132,21 @@
 .header .header-des .btn {
   margin-top: 22px;
   text-decoration: none;
-  color: white;
+  border: none;
+  color: var(--color-button-text);
   font-size: 17px;
   font-weight: 500;
-  background-color: var(--color-nav-bar);
-  padding: 10px 20px;
+  background-color: var(--color-button);
+  padding: 14px 5px;
   text-align: center;
   border-radius: 50px;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  width: 150px;
+  width: 190px;
+}
+.header .header-des .btn:hover{
+  background-color: var(--color-button-hover);
+  transition: 0.5s ease;
 }
 .offers-container {
   margin: 60px auto;
@@ -253,11 +263,11 @@
   margin: 10px auto;
   align-items: center;
 }
-.menu_btn{
+.menu-container .menu-card .menu-footer .menu_btn{
   text-decoration: none;
-  color: white;
+  color: var(--color-button-text);
   font-size: 15px;
-  background-color: var(--color-nav-bar);
+  background-color: var(--color-button);
   padding: 15px 15px;
   border: none;
   border-radius: 80px;
@@ -266,16 +276,20 @@
   font-weight: 500;
   
 }
+.menu-container .menu-card .menu-footer .menu_btn:hover{
+  background-color: var(--color-button-hover);
+  transition: 0.5s ease;
+}
 .more{
   text-align: center;
   margin-top: 40px;
 }
 .btn-more{
   text-decoration: none;
-  color: var(--background-color-menu-img);
-  font-size: 15px;
+  color: var(--color-button-text);
+  font-size: 17px;
   background-color: var(--color-button);
-  padding: 15px 60px;
+  padding: 14px 5px;
   border: none;
   text-align: center;
   border-radius: 50px;
@@ -283,6 +297,7 @@
   font-optical-sizing: auto;
   font-weight: 500;
   cursor: pointer;
+  width: 190px;
 }
 .btn-more:hover{
   background-color: var(--color-button-hover);
