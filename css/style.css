@@ -154,7 +154,7 @@
   width: 100%;
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit , minmax(460px,auto));
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 .offers-container .offer-card {
@@ -216,7 +216,7 @@
 }
 .menu-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, 400px));
+  grid-template-columns: repeat(3, minmax(50px, 350px));
   gap: 30px;
   justify-content: center;
   margin: 40px auto;
@@ -359,13 +359,15 @@ html, body {
   }
   .offers-container,
   .menu-container {
+    grid-template-columns: 350px 350px;
   }
 }
 @media (max-width: 768px) {
   /* For screens smaller than 768px */
   .offers-container,
   .menu-container {
-    
+    grid-template-columns: 400px; /* Stack items in a single column */
+    justify-content: center;
   }
   .about{
     text-align: center;
