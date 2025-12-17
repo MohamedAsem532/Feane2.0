@@ -417,6 +417,7 @@ body {
     display: block;
   }
   .offers-container,
+  .offer-card,
   .menu-container,
   .booking-container {
     grid-template-columns: 350px 350px;
