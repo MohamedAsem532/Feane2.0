@@ -428,7 +428,7 @@ body {
   .offers-container,
   .menu-container,
   .booking-container {
-    grid-template-columns: 400px; /* Stack items in a single column */
+    grid-template-columns: 350px; /* Stack items in a single column */
     justify-content: center;
   }
   .about {
