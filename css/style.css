@@ -354,29 +354,52 @@
 }
 
 /* FORM */
-.booking h2 {
+.booking-container .booking-form h2 {
   font-family: "Dancing Script", cursive;
   font-size: 40px;
   margin-bottom: 30px;
 }
 
-.booking-form input,
-.booking-form select {
+.booking-container .booking-form input,
+.booking-container .booking-form select {
   width: 100%;
   padding: 18px 17px;
   margin-bottom: 18px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   font-size: 15px;
+  transition: 0.4s;
 }
-
-.booking-form input:focus,
-.booking-form select:focus {
+.booking-container .booking-form option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;  
+  font-size: 16px;
+  padding: 10px;
+  transition: 0.4s;
+}
+.booking-container .booking-form select,
+::picker(select){
+  appearance: base-select;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: medium;
+  font-weight: 500;
   outline: none;
-  border-color: #ffbe33;
+  font-family: sans-serif;
 }
 
-.book-btn {
+.booking-container .booking-form select:open::picker-icon {
+  rotate: 180deg;
+}
+
+.booking-container .booking-form input:focus,
+.booking-container .booking-form select:focus {
+  outline: none;
+  border:2px solid #ffbe33;
+}
+
+.booking-container .booking-form .book-btn {
   margin-top: 20px;
   background: #ffbe33;
   color: #fff;
@@ -387,13 +410,13 @@
   cursor: pointer;
 }
 
-.book-btn:hover {
+.booking-container .booking-form .book-btn:hover {
   background-color: var(--color-button-hover);
   transition: 0.5s ease;
 }
 
 /* MAP */
-.booking-map iframe {
+.booking-container .booking-map iframe {
   width: 100%;
   height: 70%;
   border: none;
