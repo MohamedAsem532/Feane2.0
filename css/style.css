@@ -206,13 +206,38 @@
 .offers-container .offer-card .offer-text span {
   font-size: 18px;
 }
-.Our-Menu {
+.topic {
   text-align: center;
   font-family: "Dancing Script", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
   font-size: 40px;
+}
+.filter-menu{
+  margin: 40px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  list-style-type: none;
+  cursor: pointer;
+}
+.filter-menu li.active{
+  padding: 10px 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 40px;
+  background-color: var(--background-color-menu-black);
+  color: var(--color-button-text);
+}
+.filter-menu li{
+  padding: 10px 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 40px;
 }
 .menu-container {
   display: grid;
