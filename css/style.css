@@ -214,7 +214,7 @@
   font-style: normal;
   font-size: 40px;
 }
-.filter-menu{
+.filter-menu {
   margin: 40px auto;
   display: flex;
   flex-wrap: wrap;
@@ -223,7 +223,7 @@
   list-style-type: none;
   cursor: pointer;
 }
-.filter-menu li.active{
+.filter-menu li.active {
   padding: 10px 25px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
@@ -232,7 +232,7 @@
   background-color: var(--background-color-menu-black);
   color: var(--color-button-text);
 }
-.filter-menu li{
+.filter-menu li {
   padding: 10px 25px;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
@@ -327,7 +327,7 @@
   background-color: var(--color-button-hover);
   transition: 0.5s ease;
 }
-.about {
+.about-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -339,17 +339,17 @@
   max-width: 100%;
   overflow-x: hidden;
 }
-.about .about-img {
+.about-container .about-img {
   max-width: 500px;
 }
-.about .about-img img {
+.about-container .about-img img {
   width: 100%;
   height: 605px;
 }
-.about .about-text {
+.about-container .about-text {
   margin: 20px 0px;
 }
-.about .about-text h1 {
+.about-container .about-text h1 {
   font-size: 52px;
   line-height: 88px;
   font-family: "Dancing Script", cursive;
@@ -358,7 +358,7 @@
   font-style: normal;
   color: var(--color-main-text);
 }
-.about .about-text p {
+.about-container .about-text p {
   margin-bottom: 20px;
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
@@ -398,13 +398,13 @@
 .booking-container .booking-form option {
   display: flex;
   justify-content: flex-start;
-  gap: 20px;  
+  gap: 20px;
   font-size: 16px;
   padding: 10px;
   transition: 0.4s;
 }
 .booking-container .booking-form select,
-::picker(select){
+::picker(select) {
   appearance: base-select;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -421,7 +421,7 @@
 .booking-container .booking-form input:focus,
 .booking-container .booking-form select:focus {
   outline: none;
-  border:2px solid #ffbe33;
+  border: 2px solid #ffbe33;
 }
 
 .booking-container .booking-form .book-btn {
@@ -450,6 +450,7 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -480,7 +481,7 @@ body {
     grid-template-columns: 350px; /* Stack items in a single column */
     justify-content: center;
   }
-  .about {
+  .about-container {
     text-align: center;
   }
 }
