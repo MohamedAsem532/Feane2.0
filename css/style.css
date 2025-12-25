@@ -81,6 +81,9 @@
 .header .navbar .icon .icon-link {
   color: var(--color-main-text);
 }
+.header .navbar .icon .icon-link:hover{
+  color: var(--color-nav-link-hover);
+}
 .action_btn {
   text-decoration: none;
   border: none;
