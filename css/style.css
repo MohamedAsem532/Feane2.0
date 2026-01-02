@@ -10,6 +10,8 @@
   --color-nav-bar: #ffbe33;
   --color-nav-link-hover: #ffbe33;
   --color-paragraph: #ececec;
+  --color-social-icon: #ececec;
+  --color-social-icon-hover: #ffbe33;
   --background-color-menu-black: #1f242d;
   --background-color-menu-img: #f1f2f3;
   --color-button-text: #ececec;
@@ -81,7 +83,7 @@
 .header .navbar .icon .icon-link {
   color: var(--color-main-text);
 }
-.header .navbar .icon .icon-link:hover{
+.header .navbar .icon .icon-link:hover {
   color: var(--color-nav-link-hover);
 }
 .action_btn {
@@ -537,6 +539,11 @@ footer {
   gap: 40px;
   text-align: center;
 }
+.footer-container h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
 .footer-start,
 .footer-center,
 .footer-end {
@@ -545,13 +552,6 @@ footer {
   flex-direction: column;
   gap: 12px;
 }
-
-.footer-container h2 {
-  font-family: "Dancing Script", cursive;
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-
 .footer-start a {
   text-decoration: none;
   color: var(--color-main-text);
@@ -568,6 +568,22 @@ footer {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   color: var(--color-paragraph);
+}
+.footer-center .social-icons {
+  padding-top: 20px;
+}
+.footer-center .social-icons a {
+  color: var(--color-social-icon);
+  text-decoration: none;
+  font-size: 20px;
+  padding-top: 10px;
+  background-color: var(--background-color-menu-black);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.footer-center .social-icons a:hover {
+  color: var(--color-social-icon-hover);
 }
 .rights {
   text-align: center;
