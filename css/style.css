@@ -265,7 +265,11 @@
   background: var(--background-color-menu-black);
   border-radius: 15px;
   overflow: hidden;
+  opacity: 1;
+  pointer-events: none;
 }
+
+
 .menu-container .menu-card .menu-img {
   background-color: var(--background-color-menu-img);
   width: 100%;
