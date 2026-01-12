@@ -1,3 +1,59 @@
+.showNav {
+  animation: showNav 1s ease;
+}
+@keyframes showNav {
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.showText {
+  animation: showLeftText 1s ease;
+}
+
+@keyframes showLeftText {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.offers-container .slideLeftShow {
+  animation: leftshow 1s ease;
+
+}
+@keyframes leftshow {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.offers-container .slideRightShow {
+  animation: rightshow 1s ease;
+  
+}
+@keyframes rightshow {
+  from {
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .menu-container .menu-card.show {
   opacity: 1;
   transform: translateY(0);
@@ -7,12 +63,12 @@
 .menu-container .menu-card.hide {
   display: none;
 }
-@keyframes appear{
-  from{
+@keyframes appear {
+  from {
     opacity: 0;
     transform: translateY(100px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateY(0);
   }
