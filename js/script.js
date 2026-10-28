@@ -26,3 +26,29 @@ filterItems.forEach((item) => {
     });
   });
 });
+
+
+  const revealElements = document.querySelectorAll(
+    ".slideLeftShow,.slideRightShow,.menu-card "
+  );
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    revealElements.forEach((element) => {
+      element.classList.add("scroll-reveal");
+      revealObserver.observe(element);
+    });
+  } else {
+    revealElements.forEach((element) => element.classList.add("is-visible"));
+  }

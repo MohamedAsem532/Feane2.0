@@ -164,6 +164,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
+  overflow: clip;
 }
 .offers-container .offer-card {
   display: flex;
@@ -181,7 +182,7 @@
   height: 170px;
   border: 6px solid #ffbe33;
   border-radius: 50%;
-  overflow: hidden;
+  overflow: clip;
 }
 .offers-container .offer-card .offer-img img {
   width: 100%;
@@ -248,7 +249,7 @@
   font-style: normal;
   border-radius: 40px;
 }
-.filter-menu li:hover{
+.filter-menu li:hover {
   background-color: var(--background-color-menu-black);
   color: var(--color-paragraph);
   transition: 0.3s ease;
@@ -613,12 +614,12 @@ footer {
   font-size: 17px;
 }
 
-html,
+html {
+  overflow-x: hidden; /* fine on html, it propagates to the viewport */
+}
+
 body {
-  scroll-behavior: smooth;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  overflow-x: clip; /* doesn't create a scroll container */
 }
 /* Responsive */
 @media (max-width: 1120px) {
