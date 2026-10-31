@@ -29,7 +29,7 @@ filterItems.forEach((item) => {
 
 
   const revealElements = document.querySelectorAll(
-    ".slideLeftShow,.slideRightShow,.menu-card "
+    ".showNav,.showText,.slideLeftShow,.slideRightShow,.menu-card,.scale-card "
   );
 
   if ("IntersectionObserver" in window) {

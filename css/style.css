@@ -369,6 +369,7 @@
 }
 .about-container .about-img {
   max-width: 500px;
+  opacity: 0;
 }
 .about-container .about-img img {
   width: 100%;
@@ -376,6 +377,7 @@
 }
 .about-container .about-text {
   margin: 20px 0px;
+  opacity: 0;
 }
 .about-container .about-text h1 {
   font-size: 52px;
@@ -616,6 +618,7 @@ footer {
 
 html {
   overflow-x: hidden; /* fine on html, it propagates to the viewport */
+  scroll-behavior: smooth;
 }
 
 body {
