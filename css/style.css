@@ -199,6 +199,7 @@
 .offers-container .offer-card .offer-text {
   color: white;
   font-size: 31px;
+  text-align: center;
 }
 .offers-container .offer-card .offer-text h5 {
   font-family: "Dancing Script", cursive;
