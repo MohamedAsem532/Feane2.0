@@ -27,28 +27,49 @@ filterItems.forEach((item) => {
   });
 });
 
+const revealElements = document.querySelectorAll(
+  ".showNav,.showText,.slideLeftShow,.slideRightShow,.menu-card,.scale-card ",
+);
 
-  const revealElements = document.querySelectorAll(
-    ".showNav,.showText,.slideLeftShow,.slideRightShow,.menu-card,.scale-card "
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 },
   );
 
-  if ("IntersectionObserver" in window) {
-    const revealObserver = new IntersectionObserver(
-      (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.15 }
-    );
+  revealElements.forEach((element) => {
+    element.classList.add("scroll-reveal");
+    revealObserver.observe(element);
+  });
+} else {
+  revealElements.forEach((element) => element.classList.add("is-visible"));
+}
 
-    revealElements.forEach((element) => {
-      element.classList.add("scroll-reveal");
-      revealObserver.observe(element);
-    });
-  } else {
-    revealElements.forEach((element) => element.classList.add("is-visible"));
-  }
+const swiper = new Swiper(".test-container", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 2 /* two slides side by side */,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  spaceBetween: 10,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

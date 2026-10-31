@@ -5,13 +5,18 @@
     <title>Feane</title>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/animation.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
       rel="stylesheet"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <!-- Font Awesome -->
     <link
@@ -134,7 +139,7 @@
               </div>
             </div>
           </div>
-          <div class="menu-card hidden " data-category="burger">
+          <div class="menu-card hidden" data-category="burger">
             <div class="menu-img">
               <img src="img/f2.png" />
             </div>
@@ -152,7 +157,7 @@
               </div>
             </div>
           </div>
-          <div class="menu-card hidden " data-category="pizza">
+          <div class="menu-card hidden" data-category="pizza">
             <div class="menu-img">
               <img src="img/f3.png" />
             </div>
@@ -337,35 +342,67 @@
       <!-- Testimonials -->
       <section class="testimonials">
         <h1 class="topic">What Says Our Customers</h1>
-        <div class="test-container ">
-          <div class="item">
-            <div class="test-card hidden scale-card">
-              <p>
-                "The homemade Fettuccine Alfredo was pure comfort in a bowl. You
-                can really taste the difference with the fresh, hand-rolled
-                pasta—it had that perfect 'al dente' bite."
-              </p>
-              <h2>Moana Michell</h2>
-              <span>magna aliqua</span>
+        <div class="test-container">
+          <div class="slider-wrapper swiper-wrapper">
+            <div class="swiper-slide item">
+              <div class="test-card hidden scale-card">
+                <p>
+                  "The homemade Fettuccine Alfredo was pure comfort in a bowl.
+                  You can really taste the difference with the fresh,
+                  hand-rolled pasta—it had that perfect 'al dente' bite."
+                </p>
+                <h2>Moana Michell</h2>
+                <span>magna aliqua</span>
+              </div>
+              <div class="client-img">
+                <img src="img/client1.jpg" alt="" />
+              </div>
             </div>
-            <div class="client-img">
-              <img src="img/client1.jpg" alt="" />
+            <div class="swiper-slide item">
+              <div class="test-card hidden scale-card">
+                <p>
+                  "Hands down the best burger I’ve had in years! The patty was
+                  incredibly juicy and seasoned to perfection, and that toasted
+                  brioche bun stayed firm until the very last bite."
+                </p>
+                <h2>Mike Hamell</h2>
+                <span>magna aliqua</span>
+              </div>
+              <div class="client-img">
+                <img src="img/client2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide item">
+              <div class="test-card hidden scale-card">
+                <p>
+                  "The homemade Fettuccine Alfredo was pure comfort in a bowl.
+                  You can really taste the difference with the fresh,
+                  hand-rolled pasta—it had that perfect 'al dente' bite."
+                </p>
+                <h2>Moana Michell</h2>
+                <span>magna aliqua</span>
+              </div>
+              <div class="client-img">
+                <img src="img/client1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide item">
+              <div class="test-card hidden scale-card">
+                <p>
+                  "Hands down the best burger I’ve had in years! The patty was
+                  incredibly juicy and seasoned to perfection, and that toasted
+                  brioche bun stayed firm until the very last bite."
+                </p>
+                <h2>Mike Hamell</h2>
+                <span>magna aliqua</span>
+              </div>
+              <div class="client-img">
+                <img src="img/client2.jpg" alt="" />
+              </div>
             </div>
           </div>
-          <div class="item">
-            <div class="test-card hidden scale-card">
-              <p>
-                "Hands down the best burger I’ve had in years! The patty was
-                incredibly juicy and seasoned to perfection, and that toasted
-                brioche bun stayed firm until the very last bite."
-              </p>
-              <h2>Mike Hamell</h2>
-              <span>magna aliqua</span>
-            </div>
-            <div class="client-img">
-              <img src="img/client2.jpg" alt="" />
-            </div>
-          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination" style="color: yellow;"></div>
         </div>
       </section>
     </main>
@@ -404,6 +441,7 @@
         <p>© 2025 All Rights Reserved</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
