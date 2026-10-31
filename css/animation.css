@@ -1,18 +1,23 @@
 .showNav.is-visible {
   animation: showNav 1s ease;
+  opacity: 1;
 }
 
 .showText.is-visible {
   animation: showLeftText 1s ease;
+  opacity: 1;
 }
 .scale-card.is-visible {
   animation: scaling 0.7s ease;
+  opacity: 1;
 }
 .slideLeftShow.is-visible {
   animation: leftshow 1s ease;
+  opacity: 1;
 }
 .slideRightShow.is-visible {
   animation: rightshow 1s ease;
+  opacity: 1;
 }
 
 .menu-container .menu-card.is-visible {

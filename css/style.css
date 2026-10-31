@@ -377,7 +377,6 @@
 }
 .about-container .about-text {
   margin: 20px 0px;
-  opacity: 0;
 }
 .about-container .about-text h1 {
   font-size: 52px;
@@ -614,6 +613,11 @@ footer {
   padding: 50px;
   color: var(--color-main-text);
   font-size: 17px;
+}
+
+/* For hiding items before revealing them using animation */
+.hidden {
+  opacity: 0;
 }
 
 html {
