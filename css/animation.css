@@ -1,3 +1,6 @@
+.showNav{
+  opacity: 0;
+}
 .showNav.is-visible {
   animation: showNav 1s ease;
   opacity: 1;
